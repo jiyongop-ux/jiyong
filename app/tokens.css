@@ -1,0 +1,144 @@
+/* 자동 생성 파일이에요. 직접 고치지 마세요.
+ * 만드는 법: node harness/scripts/gen-tokens.mjs
+ * 원본: docs/tokens.json (텍스트 스타일 묶음만 docs/Design.md 2장) */
+@theme {
+  /* Tailwind 기본값을 지우고 토큰만 남겨요. */
+  --color-*: initial;
+  --spacing-*: initial;
+  --radius-*: initial;
+  --text-*: initial;
+  --font-weight-*: initial;
+  --leading-*: initial;
+
+  --font-sans: var(--font-noto-sans-kr), "Noto Sans KR", sans-serif;
+
+  /* 색 (semantic 토큰만) */
+  --color-bg-accent-subtle: #FFF5FA;
+  --color-bg-default: #F7F7F7;
+  --color-bg-error-subtle: #FFF0F3;
+  --color-bg-inverse: #2D2D2D;
+  --color-bg-subtle: #EFF1F3;
+  --color-bg-surface: #FFFFFF;
+  --color-border-default: #D9DCDF;
+  --color-border-divider: #0000001A;
+  --color-border-error: #E30036;
+  --color-border-focus: #FF2E98;
+  --color-border-medium: #66707A;
+  --color-border-strong: #181A1B;
+  --color-border-subtle: #EFF1F3;
+  --color-brand-primary: #FF2E98;
+  --color-effect-shadow-subtle: #0000000D;
+  --color-fill-accent: #E6007E;
+  --color-fill-disabled: #D9DCDF;
+  --color-fill-disabled-strong: #B7BDC4;
+  --color-fill-primary: #FF2E98;
+  --color-fill-primary-hover: #E6007E;
+  --color-fill-secondary: #181A1B;
+  --color-fill-tertiary: #EFF1F3;
+  --color-icon-accent: #FF2E98;
+  --color-icon-default: #66707A;
+  --color-icon-disabled: #D9DCDF;
+  --color-icon-error: #E30036;
+  --color-icon-on-dark: #FFFFFF;
+  --color-icon-primary: #000000;
+  --color-icon-strong: #181A1B;
+  --color-surface-default: #FFFFFF;
+  --color-text-accent: #FF2E98;
+  --color-text-error: #E30036;
+  --color-text-on-dark: #FFFFFF;
+  --color-text-on-disabled: #66707A;
+  --color-text-placeholder: #B7BDC4;
+  --color-text-primary: #181A1B;
+  --color-text-secondary: #66707A;
+  --color-text-tertiary: #878787;
+
+  /* 간격 (클래스 숫자 = px) */
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+
+  /* 모서리 */
+  --radius-0: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-40: 40px;
+  --radius-999: 999px;
+  --radius-full: 9999px;
+
+  /* 텍스트 스타일 (크기 / 줄 간격 / 굵기 묶음) */
+  --text-heading-h1: 32px;
+  --text-heading-h1--line-height: 44px;
+  --text-heading-h1--font-weight: 700;
+  --text-heading-h2: 28px;
+  --text-heading-h2--line-height: 40px;
+  --text-heading-h2--font-weight: 700;
+  --text-heading-h3: 24px;
+  --text-heading-h3--line-height: 32px;
+  --text-heading-h3--font-weight: 700;
+  --text-heading-h4: 20px;
+  --text-heading-h4--line-height: 28px;
+  --text-heading-h4--font-weight: 500;
+  --text-subtitle-bold: 18px;
+  --text-subtitle-bold--line-height: 26px;
+  --text-subtitle-bold--font-weight: 700;
+  --text-subtitle-default: 18px;
+  --text-subtitle-default--line-height: 26px;
+  --text-subtitle-default--font-weight: 600;
+  --text-body-strong: 16px;
+  --text-body-strong--line-height: 24px;
+  --text-body-strong--font-weight: 600;
+  --text-body-medium: 16px;
+  --text-body-medium--line-height: 24px;
+  --text-body-medium--font-weight: 500;
+  --text-body-small-strong: 14px;
+  --text-body-small-strong--line-height: 21px;
+  --text-body-small-strong--font-weight: 600;
+  --text-body-small-medium: 14px;
+  --text-body-small-medium--line-height: 21px;
+  --text-body-small-medium--font-weight: 500;
+  --text-caption-medium: 13px;
+  --text-caption-medium--line-height: 18px;
+  --text-caption-medium--font-weight: 500;
+  --text-caption-bold: 13px;
+  --text-caption-bold--line-height: 18px;
+  --text-caption-bold--font-weight: 700;
+  --text-caption-small: 12px;
+  --text-caption-small--line-height: 16px;
+  --text-caption-small--font-weight: 500;
+  --text-caption-small-bold: 12px;
+  --text-caption-small-bold--line-height: 16px;
+  --text-caption-small-bold--font-weight: 700;
+  --text-caption-mini: 10px;
+  --text-caption-mini--line-height: 14px;
+  --text-caption-mini--font-weight: 600;
+  --text-specimen-weight-medium: 32px;
+  --text-specimen-weight-medium--line-height: 44px;
+  --text-specimen-weight-medium--font-weight: 500;
+  --text-specimen-weight-semibold: 32px;
+  --text-specimen-weight-semibold--line-height: 44px;
+  --text-specimen-weight-semibold--font-weight: 600;
+}
